@@ -11,13 +11,14 @@
 #include <time.h>
 
 class logor {
-public:
+private:
     std::vector<int> mass;
+    void Merge(int first, int last);
+public:
     logor(std::vector<int> massiv){
         mass=massiv;
     }
-    void Merge(int first, int last);
-    void MergeSort(int first, int last);
+    void Sort(int first, int last);
 };
 
 

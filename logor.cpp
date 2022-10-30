@@ -22,13 +22,13 @@ void logor::Merge(int first, int last){
         }
     for (j=first; j<=last; j++) mass[j]=massiv[j];
 };
-void logor::MergeSort(int first, int last)
+void logor::Sort(int first, int last)
 {
     {
         if (first<last)
         {
-            MergeSort(first, (first+last)/2); //сортировка левой части
-            MergeSort((first+last)/2+1, last); //сортировка правой части
+            Sort(first, (first+last)/2); //сортировка левой части
+            Sort((first+last)/2+1, last); //сортировка правой части
             Merge(first, last); //слияние двух частей
         }
     }
