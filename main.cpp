@@ -4,22 +4,19 @@
 #include "lineinaja.h"
 #include <fstream>
 #include <ctime>
-
+#include "timer.h"
 int main() {
     int N=10;
     int n=100;
     lineinaja l1;
+    timer timer;
     std::ofstream lin("lin.txt");
     std::ofstream kvad("kvad.txt");
     std::ofstream log("log.txt");
     for (int i = 0; i < N; ++i) {
-        std::clock_t start1;
-        double duration1;
-
-        start1 = std::clock();
+        timer.start();
         l1.creite_mass(n);
-        duration1 = ( std::clock() - start1 );
-        lin << duration1 << std::endl;
+        lin << timer.stop() << std::endl;
 
 
         std::clock_t start2;
