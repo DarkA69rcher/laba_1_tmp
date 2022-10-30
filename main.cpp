@@ -9,6 +9,7 @@ int main() {
     int N=10;
     int n=100;
     lineinaja l1;
+    kvadrat k1;
     timer timer;
     std::ofstream lin("lin.txt");
     std::ofstream kvad("kvad.txt");
@@ -20,9 +21,8 @@ int main() {
 
         std::vector<int> mass1 = l1.creite_mass(n);
         timer.start();
-        k1.cort();
-        duration2 = ( std::clock() - start2 );
-        kvad << duration2 << std::endl;
+        k1.sort(mass1);
+        kvad << timer.stop() << std::endl;
 
         std::clock_t start3;
         double duration3;

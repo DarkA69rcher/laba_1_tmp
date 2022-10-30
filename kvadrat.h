@@ -11,7 +11,7 @@
 
 class kvadrat {
 public:
-    void cort(std::vector<int> mass);
+    void sort(std::vector<int> mass);
 };
 
 #endif //LABA_1_TMP_KVADRAT_H
