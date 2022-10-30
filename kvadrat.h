@@ -27,7 +27,7 @@ public:
     }
     void cort(){
         for (int i = 0; i < col_zapol; ++i) {
-            for (int j = 0;j<col_zapol; ++j) {
+            for (int j = 0;j<col_zapol-1; ++j) {
                 if (mass[i]<mass[j]){
                     zamena=mass[i];
                     mass[i]=mass[j];

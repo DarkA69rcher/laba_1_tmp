@@ -23,7 +23,7 @@ public:
 
     void Merge(int first, int last){
         int middle, start, final, j;
-        int *mas=new int[100];
+        int *mas=new int[saze_];
         middle=(first+last)/2; //вычисление среднего элемента
         start=first; //начало левой части
         final=middle+1; //начало правой части
