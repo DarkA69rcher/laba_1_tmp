@@ -7,48 +7,38 @@
 
 int main() {
     lineinaja l1;
-    lineinaja l_k;
-    lineinaja l_l;
     std::ofstream lin("lin.txt");
     std::ofstream kvad("kvad.txt");
     std::ofstream log("log.txt");
     int N=10;
-    int n=100000;
-    for (int j = 0; j < n; ++j) {
-        l_k.zapolnen();
-    }
-    kvadrat k1(l_k.mass);
-    for (int j = 0; j < n; ++j) {
-        l_l.zapolnen();
-    }
-    logor l2(l_l.mass);
+    int n=1000;
+    kvadrat k1(l1.creite_mass(n));
+    logor l2(l1.creite_mass(n));
     for (int i = 0; i < N; ++i) {
-        std::clock_t start;
-        double duration;
-
-        start = std::clock();
-        for (int j = 0; j < n; ++j) {
-            l1.zapolnen();
-        }
-        duration = ( std::clock() - start );
-        lin << duration << std::endl;
-
-
         std::clock_t start1;
         double duration1;
 
-        start = std::clock();
-        k1.cort();
-        duration = ( std::clock() - start );
-        kvad << duration1 << std::endl;
+        start1 = std::clock();
+        l1.creite_mass(n);
+        duration1 = ( std::clock() - start1 );
+        lin << duration1 << std::endl;
+
 
         std::clock_t start2;
         double duration2;
 
-        start = std::clock();
+        start2 = std::clock();
+        k1.cort();
+        duration2 = ( std::clock() - start2 );
+        kvad << duration2 << std::endl;
+
+        std::clock_t start3;
+        double duration3;
+
+        start3 = std::clock();
         l2.MergeSort(0,n);
-        duration = ( std::clock() - start );
-        log << duration2 << std::endl;
+        duration3 = ( std::clock() - start3 );
+        log << duration3 << std::endl;
     }
     return 0;
 }

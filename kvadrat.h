@@ -11,28 +11,14 @@
 
 class kvadrat {
 private:
-    std::vector<int> mass;
+
 
 public:
-    kvadrat(std::vector<int> massiv){
-        mass=massiv;
-
+    kvadrat(std::vector<int> massiv) {
+        mass = massiv;
     }
-    void cort(){
-        int zamena;
-        int size;
-        size = mass.size();
-        for (int i = 0; i < size; ++i) {
-            for (int j = 0;j<size-1; ++j) {
-                if (mass[i]<mass[j]){
-                    zamena=mass[i];
-                    mass[i]=mass[j];
-                    mass[j]=zamena;
-                }
-            }
-        }
-    };
-};
 
+    void cort();
+};
 
 #endif //LABA_1_TMP_KVADRAT_H

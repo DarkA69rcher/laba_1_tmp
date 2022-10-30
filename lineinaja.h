@@ -9,7 +9,6 @@
 #include <vector>
 class lineinaja{
 private:
-int size;
 public:
     std::vector<int> mass;
     std::vector<int> creite_mass(int n);
