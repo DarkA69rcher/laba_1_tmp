@@ -4,9 +4,11 @@
 
 #ifndef LABA_1_TMP_TIMER_H
 #define LABA_1_TMP_TIMER_H
-
-
+#include "timer.h"
+#include <ctime>
+#include <iostream>
 class timer {
+    std::clock_t start1;
 void start();
 int stop();
 };

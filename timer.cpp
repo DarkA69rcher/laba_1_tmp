@@ -3,3 +3,13 @@
 //
 
 #include "timer.h"
+#include <ctime>
+#include <iostream>
+void timer::start(){
+    start1 = std::clock();
+};
+int timer::stop(){
+    double duration;
+    duration = ( std::clock() - start1 );
+    return duration;
+};
