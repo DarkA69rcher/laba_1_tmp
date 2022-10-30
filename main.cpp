@@ -7,7 +7,7 @@
 #include "timer.h"
 int main() {
     int N=10;
-    int n=100;
+    int n=10000;
     lineinaja l1;
     kvadrat k1;
     timer timer;
@@ -25,8 +25,8 @@ int main() {
         kvad << timer.stop() << std::endl;
 
         logor l2(l1.creite_mass(n));
-       timer.start();
-        l2.MergeSort(0,n);
+        timer.start();
+        l2.MergeSort(0,n-1);
         log << timer.stop() << std::endl;
     }
     return 0;
