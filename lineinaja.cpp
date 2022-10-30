@@ -5,8 +5,7 @@
 std::vector<int> lineinaja::creite_mass(int n){
     std::vector<int> mass(n);
     for (int j = 0; j < n; ++j) {
-        srand(time(NULL));
-        mass[n] = rand();
+        mass[j] = rand();
     }
     return mass;
 }

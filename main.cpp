@@ -11,7 +11,7 @@ int main() {
     std::ofstream kvad("kvad.txt");
     std::ofstream log("log.txt");
     int N=10;
-    int n=1000;
+    int n=100;
     kvadrat k1(l1.creite_mass(n));
     logor l2(l1.creite_mass(n));
     for (int i = 0; i < N; ++i) {
