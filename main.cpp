@@ -18,11 +18,8 @@ int main() {
         l1.creite_mass(n);
         lin << timer.stop() << std::endl;
 
-
-        std::clock_t start2;
-        double duration2;
-
-        start2 = std::clock();
+        std::vector<int> mass1 = l1.creite_mass(n);
+        timer.start();
         k1.cort();
         duration2 = ( std::clock() - start2 );
         kvad << duration2 << std::endl;

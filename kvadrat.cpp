@@ -2,7 +2,7 @@
 // Created by dark6 on 30.10.2022.
 //
 #include "kvadrat.h"
-void  kvadrat::cort() {
+void  kvadrat::cort(std::vector<int> mass) {
     int zamena;
     int size;
     size = mass.size();

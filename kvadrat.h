@@ -10,14 +10,8 @@
 #include <random>
 
 class kvadrat {
-private:
-    std::vector<int> mass;
 public:
-    kvadrat(std::vector<int> massiv) {
-        mass = massiv;
-    }
-
-    void cort();
+    void cort(std::vector<int> mass);
 };
 
 #endif //LABA_1_TMP_KVADRAT_H
