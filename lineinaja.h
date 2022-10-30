@@ -9,9 +9,12 @@
 #include <vector>
 class lineinaja{
 private:
-
+int size;
 public:
     std::vector<int> mass;
+    lineinaja(int n){
+    size = n;
+}
     void zapolnen();
 };
 

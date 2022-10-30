@@ -16,7 +16,6 @@ private:
 public:
     kvadrat(std::vector<int> massiv){
         mass=massiv;
-
     }
     void cort();
 };

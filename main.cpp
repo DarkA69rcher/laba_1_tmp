@@ -27,7 +27,7 @@ int main() {
         double duration;
 
         start = std::clock();
-        for (int j = 0; j < n*100; ++j) {
+        for (int j = 0; j < n; ++j) {
             l1.zapolnen();
         }
         duration = ( std::clock() - start );

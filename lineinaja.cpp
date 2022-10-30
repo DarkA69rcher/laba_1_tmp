@@ -4,8 +4,11 @@
 #include "lineinaja.h"
 void lineinaja::zapolnen() {
     int size;
-    mass.resize(size+1);
-    srand(time(NULL));
-    mass[size] = rand();
-    size++;
+    for (int j = 0; j < size; ++j) {
+        mass.resize(size+1);
+        srand(time(NULL));
+        mass[size] = rand();
+        size++;
+    }
+
 };

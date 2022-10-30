@@ -5,23 +5,22 @@
 #include "logor.h"
 void logor::Merge(int first, int last){
     int middle, start, final, j;
-    int *mas=new int[mass.size()];
+    std::vector<int> massiv;
     middle=(first+last)/2;
     start=first;
     final=middle+1;
     for(j=first; j<=last; j++)
         if ((start<=middle) && ((final>last) || (mass[start]<mass[final])))
         {
-            mas[j]=mass[start];
+            massiv[j]=mass[start];
             start++;
         }
         else
         {
-            mas[j]=mass[final];
+            massiv[j]=mass[final];
             final++;
         }
-    for (j=first; j<=last; j++) mass[j]=mas[j];
-    delete[]mas;
+    for (j=first; j<=last; j++) mass[j]=massiv[j];
 };
 void logor::MergeSort(int first, int last)
 {
