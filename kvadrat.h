@@ -11,8 +11,7 @@
 
 class kvadrat {
 private:
-
-
+    std::vector<int> mass;
 public:
     kvadrat(std::vector<int> massiv) {
         mass = massiv;

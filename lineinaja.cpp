@@ -3,8 +3,8 @@
 //
 #include "lineinaja.h"
 std::vector<int> lineinaja::creite_mass(int n){
+    std::vector<int> mass(n);
     for (int j = 0; j < n; ++j) {
-        std::vector<int> mass(n);
         srand(time(NULL));
         mass[n] = rand();
     }
