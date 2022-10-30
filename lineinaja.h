@@ -8,9 +8,7 @@
 #include <time.h>
 #include <vector>
 class lineinaja{
-private:
 public:
-    std::vector<int> mass;
     std::vector<int> creite_mass(int n);
 };
 
