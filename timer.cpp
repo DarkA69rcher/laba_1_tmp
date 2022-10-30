@@ -8,7 +8,7 @@
 void timer::start(){
     start1 = std::clock();
 };
-int timer::stop(){
+double timer::stop(){
     double duration;
     duration = ( std::clock() - start1 );
     return duration;

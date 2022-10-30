@@ -8,9 +8,11 @@
 #include <ctime>
 #include <iostream>
 class timer {
+private:
     std::clock_t start1;
+public:
 void start();
-int stop();
+double stop();
 };
 
 
