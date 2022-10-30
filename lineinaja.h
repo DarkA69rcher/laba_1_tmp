@@ -9,15 +9,10 @@
 #include <vector>
 class lineinaja{
 private:
-    std::vector<int> mass;
-    int col_zapol=0;
+
 public:
-    void zapolnen(){
-        mass.resize(col_zapol+100);
-        srand(time(NULL));
-        mass[col_zapol] = rand();
-        col_zapol++;
-    };
+    std::vector<int> mass;
+    void zapolnen();
 };
 
 
