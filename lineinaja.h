@@ -12,10 +12,7 @@ private:
 int size;
 public:
     std::vector<int> mass;
-    lineinaja(int n){
-    size = n;
-}
-    void zapolnen();
+    std::vector<int> creite_mass(int n);
 };
 
 

@@ -16,8 +16,22 @@ private:
 public:
     kvadrat(std::vector<int> massiv){
         mass=massiv;
+
     }
-    void cort();
+    void cort(){
+        int zamena;
+        int size;
+        size = mass.size();
+        for (int i = 0; i < size; ++i) {
+            for (int j = 0;j<size-1; ++j) {
+                if (mass[i]<mass[j]){
+                    zamena=mass[i];
+                    mass[i]=mass[j];
+                    mass[j]=zamena;
+                }
+            }
+        }
+    };
 };
 
 
