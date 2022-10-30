@@ -24,13 +24,10 @@ int main() {
         k1.sort(mass1);
         kvad << timer.stop() << std::endl;
 
-        std::clock_t start3;
-        double duration3;
-
-        start3 = std::clock();
+        logor l2(l1.creite_mass(n));
+       timer.start();
         l2.MergeSort(0,n);
-        duration3 = ( std::clock() - start3 );
-        log << duration3 << std::endl;
+        log << timer.stop() << std::endl;
     }
     return 0;
 }
