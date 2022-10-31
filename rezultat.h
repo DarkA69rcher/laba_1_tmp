@@ -9,7 +9,6 @@
 class rezultat {
 public:
     void srednee_vremaj(std::string s,int N);
-    void srednee_kvadrat_vremaj(std::string s,int N);
 };
 
 
