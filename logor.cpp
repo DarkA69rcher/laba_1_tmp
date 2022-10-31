@@ -5,7 +5,7 @@
 #include "logor.h"
 void logor::Merge(int first, int last){
     int middle, start, final, j;
-    std::vector<int> massiv;
+    std::vector<int> massiv(last+1);
     middle=(first+last)/2;
     start=first;
     final=middle+1;

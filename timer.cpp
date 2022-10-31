@@ -10,6 +10,6 @@ void timer::start(){
 };
 double timer::stop(){
     double duration;
-    duration = ( std::clock() - start1 );
+    duration = ( std::clock() - start1 )/ (double) CLOCKS_PER_SEC;
     return duration;
 };
